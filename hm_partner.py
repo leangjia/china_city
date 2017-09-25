@@ -5,6 +5,7 @@ from openerp.osv import osv,fields
 
 class hm_partner(osv.osv):
 		_inherit='res.partner'
+		_inherit='res.company'
 
 		_columns={
 						'city':fields.many2one('hm.city','city'),
